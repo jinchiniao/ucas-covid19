@@ -23,11 +23,11 @@ debug = False
 verify_cert = False
 
 # 全局变量，如果使用自己的服务器运行请根据需要修改 ->以下变量<-
-user = "XXX"  # sep 账号
-passwd = "YYY"  # sep 密码
-api_key = "ZZZ"  # 可选， server 酱的通知 api key
-
+user = "USERNAME"    # sep账号
+passwd = "PASSWORD"   # sep密码
+api_key = "API_KEY"  # server酱的api，填了可以微信通知打卡结果，不填没影响
 # 可选，如果需要邮件通知，那么修改下面五行 :)
+
 smtp_port = "SMTP_PORT"
 smtp_server = "SMTP_SERVER"
 sender_email = "SENDER_EMAIL"
