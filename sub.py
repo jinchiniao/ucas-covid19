@@ -195,7 +195,7 @@ def submit(s: requests.Session, old: dict):
     else:
         print("打卡失败，错误信息: ", r.json().get("m"))
 
-    # message(api_key, sender_email, sender_email_passwd, receiver_email, result.get('m'), new_daily)
+    message(api_key, sender_email, sender_email_passwd, receiver_email, result.get('m'), new_daily)
 
 
 def check_submit_data(data: dict):
