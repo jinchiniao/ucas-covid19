@@ -17,7 +17,7 @@ from email.utils import formataddr
 from email.mime.text import MIMEText
 
 # 开启debug将会输出打卡填报的数据，关闭debug只会输出打卡成功或者失败，如果使用github actions，请务必设置该选项为False
-debug = False
+debug = True
 
 # 忽略网站的证书错误，这很不安全 :(
 verify_cert = False
