@@ -54,15 +54,15 @@ def login(s: requests.Session, username, password, cookie_file: Path):
     #     "https://app.ucas.ac.cn/uc/wap/login?redirect=https%3A%2F%2Fapp.ucas.ac.cn%2Fsite%2FapplicationSquare%2Findex%3Fsid%3D2")
     # print(r.text)
 
-    if cookie_file.exists():
-        cookie = json.loads(cookie_file.read_text(encoding='utf-8'))
-        s.cookies = requests.utils.cookiejar_from_dict(cookie)
-        # 测试cookie是否有效
-        if get_daily(s) == False:
-            print("cookie失效，进入登录流程")
-        else:
-            print("cookie有效，跳过登录环节")
-            return
+#     if cookie_file.exists():
+#         cookie = json.loads(cookie_file.read_text(encoding='utf-8'))
+#         s.cookies = requests.utils.cookiejar_from_dict(cookie)
+#         # 测试cookie是否有效
+#         if get_daily(s) == False:
+#             print("cookie失效，进入登录流程")
+#         else:
+#             print("cookie有效，跳过登录环节")
+#             return
 
     payload = {
         "username": username,
